@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\1190_Comprex\CompreX\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\1190_Comprex\CompreX\app\build\intermediates\pre-dexed\debug\classes-16868cacf2505ac8934be1b85c79245446c3078f.jar" />
+    </item>
+    <item
+        jar="D:\1190_Comprex\CompreX\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\1190_Comprex\CompreX\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-8ec312ebcd0f9d458867a42e51aebb685ed8134f.jar" />
+    </item>
+    <item
+        jar="D:\1190_Comprex\CompreX\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\1190_Comprex\CompreX\app\build\intermediates\pre-dexed\debug\classes-09300ea60b9e3cab69168ab47615731b1a61798e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil Kedia\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\1190_Comprex\CompreX\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-814e3345f7cdb9d328d4be2bb2f89cd3dd6dfa91.jar" />
+    </item>
+
+</items>
