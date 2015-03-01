@@ -1,13 +1,15 @@
 package com.prn12030121012.nikhilkedia.comprex;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.view.View;
+import android.widget.EditText;
 
-
-public class Login extends ActionBarActivity {
-
+public class Login extends Activity {
+    public final static String EXTRA_MESSAGE = "com.prn12030121012.nikhilkedia.comprex";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,4 +38,25 @@ public class Login extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /** Called when the user clicks the Send button */
+    public void sendName(View view) {
+        // Do something in response to button
+        //  Intent intent = new Intent(this, MainActivity.class);
+        EditText fullname = (EditText) findViewById(R.id.fullname);
+        String name = fullname.getText().toString();
+        //  intent.putExtra(EXTRA_MESSAGE, name);
+        // startActivity(intent);
+        Intent intent = new Intent(Login.this,MainActivity.class);
+        intent.putExtra("fullname",name);
+        startActivity(intent);
+
+
+
+
+    }
+
+
+
 }
+
