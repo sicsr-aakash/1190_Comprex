@@ -7,7 +7,7 @@
     tools:context="com.prn12030121012.nikhilkedia.comprex.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Welcome"
@@ -16,38 +16,37 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Would you like to Compress an Image ?"
-        android:id="@+id/textView"
+        android:id="@+id/q"
         android:layout_below="@+id/welcome"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/iv"
-        android:src="@drawable/symbiosis"
-        android:contentDescription="Image to be compressed"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/ai" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Image"
-        android:id="@+id/ai"
-        android:layout_above="@+id/ci"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Compress Image"
         android:id="@+id/ci"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:id="@+id/si"
+        android:layout_above="@+id/ci"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv"
+        android:src="@drawable/abc_ic_clear_mtrl_alpha"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/si"
+        android:layout_below="@+id/q"
+        android:contentDescription="Selected Image" />
 </RelativeLayout>

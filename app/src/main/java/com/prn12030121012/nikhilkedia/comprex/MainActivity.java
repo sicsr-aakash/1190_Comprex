@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 public class MainActivity extends Activity {
 
     private static final int SELECT_PICTURE = 1;
@@ -20,15 +19,13 @@ public class MainActivity extends Activity {
     private String selectedImagePath;
     private ImageView img;
     private TextView welcome;
-
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // Get the message from the intent
         Intent intent = getIntent();
-        String name = getIntent().getStringExtra("fullname");
+        String name = getIntent().getStringExtra("fn");
         // Create the text view
         welcome = (TextView) findViewById(R.id.welcome);
         welcome.setText("Welcome " + name);
@@ -38,7 +35,7 @@ public class MainActivity extends Activity {
 
         img = (ImageView)findViewById(R.id.iv);
 
-        ((Button) findViewById(R.id.ai))
+        ((Button) findViewById(R.id.si))
                 .setOnClickListener(new OnClickListener() {
                     public void onClick(View arg0) {
                         Intent intent = new Intent();
@@ -68,4 +65,6 @@ public class MainActivity extends Activity {
         cursor.moveToFirst();
         return cursor.getString(column_index);
     }
+
+
 }

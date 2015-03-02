@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 
-public class Login extends Activity {
+public class LoginActivity extends Activity {
     public final static String EXTRA_MESSAGE = "com.prn12030121012.nikhilkedia.comprex";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,12 +43,12 @@ public class Login extends Activity {
     public void sendName(View view) {
         // Do something in response to button
         //  Intent intent = new Intent(this, MainActivity.class);
-        EditText fullname = (EditText) findViewById(R.id.fullname);
+        EditText fullname = (EditText) findViewById(R.id.fn);
         String name = fullname.getText().toString();
         //  intent.putExtra(EXTRA_MESSAGE, name);
         // startActivity(intent);
-        Intent intent = new Intent(Login.this,MainActivity.class);
-        intent.putExtra("fullname",name);
+        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        intent.putExtra("fn",name);
         startActivity(intent);
 
 
@@ -59,4 +59,3 @@ public class Login extends Activity {
 
 
 }
-
