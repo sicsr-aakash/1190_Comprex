@@ -29,8 +29,9 @@
         android:layout_height="wrap_content"
         android:text="Compress Image"
         android:id="@+id/ci"
+        android:onClick="compress"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
@@ -38,15 +39,16 @@
         android:text="Select Image"
         android:id="@+id/si"
         android:layout_above="@+id/ci"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/iv"
         android:src="@drawable/abc_ic_clear_mtrl_alpha"
-        android:layout_centerHorizontal="true"
+        android:contentDescription="Selected Image"
+        android:layout_alignParentStart="true"
         android:layout_above="@+id/si"
-        android:layout_below="@+id/q"
-        android:contentDescription="Selected Image" />
+        android:layout_below="@+id/q" />
+
 </RelativeLayout>
