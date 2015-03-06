@@ -8,25 +8,15 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.BreakIterator;
-import java.util.BitSet;
-import java.util.Objects;
-import java.util.Random;
-
-import static java.util.Objects.requireNonNull;
 
 public class MainActivity extends Activity {
 
@@ -98,7 +88,7 @@ public class MainActivity extends Activity {
         // Create imageDir
         File mypath = new File(directory, "profile.jpg");
 
-        FileOutputStream fos = null;
+        FileOutputStream fos;
         try {
 
             fos = new FileOutputStream(mypath);
